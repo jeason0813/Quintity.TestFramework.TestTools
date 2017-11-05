@@ -1,0 +1,71 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Quintity.Repository", "Quintity.Repository", "{24539D56-1FC8-4597-A531-5CE752ABDFE2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SharedFiles", "SharedFiles", "{2E097EEA-4921-4289-90C6-1C7F94394221}"
+	ProjectSection(SolutionItems) = preProject
+		Quintity.Repository\SharedFiles\AssemblyVersionInfo.cs = Quintity.Repository\SharedFiles\AssemblyVersionInfo.cs
+		Quintity.Repository\SharedFiles\License.rtf = Quintity.Repository\SharedFiles\License.rtf
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quintity.TestFramework.TestEngineer", "Quintity.TestFramework.TestEngineer\Quintity.TestFramework.TestEngineer.csproj", "{064BB86D-0B85-44C3-9DDD-CB246F53C7AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quintity.TestFramework.TestEngineer.Setup", "Quintity.TestFramework.TestEngineer.Setup\Quintity.TestFramework.TestEngineer.Setup.csproj", "{BBB087D3-F359-4570-BBA5-AFFCCB854DC4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{064BB86D-0B85-44C3-9DDD-CB246F53C7AA} = {064BB86D-0B85-44C3-9DDD-CB246F53C7AA}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quintity.TestFramework.TestProject", "Quintity.TestFramework.TestProject\Quintity.TestFramework.TestProject.csproj", "{9279265D-AF85-4BF3-A91E-4A0A461CF2CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quintity.TestFramework.Runtime", "Quintity.TestFramework.Runtime\Quintity.TestFramework.Runtime.csproj", "{9A642079-DBD1-44C6-8A8D-A4F5239AD3AF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{064BB86D-0B85-44C3-9DDD-CB246F53C7AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{064BB86D-0B85-44C3-9DDD-CB246F53C7AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{064BB86D-0B85-44C3-9DDD-CB246F53C7AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{064BB86D-0B85-44C3-9DDD-CB246F53C7AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBB087D3-F359-4570-BBA5-AFFCCB854DC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBB087D3-F359-4570-BBA5-AFFCCB854DC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBB087D3-F359-4570-BBA5-AFFCCB854DC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9279265D-AF85-4BF3-A91E-4A0A461CF2CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9279265D-AF85-4BF3-A91E-4A0A461CF2CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9279265D-AF85-4BF3-A91E-4A0A461CF2CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9279265D-AF85-4BF3-A91E-4A0A461CF2CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A642079-DBD1-44C6-8A8D-A4F5239AD3AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A642079-DBD1-44C6-8A8D-A4F5239AD3AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A642079-DBD1-44C6-8A8D-A4F5239AD3AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A642079-DBD1-44C6-8A8D-A4F5239AD3AF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2E097EEA-4921-4289-90C6-1C7F94394221} = {24539D56-1FC8-4597-A531-5CE752ABDFE2}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs40
+		SccProjectUniqueName0 = Quintity.TestFramework.TestEngineer\\Quintity.TestFramework.TestEngineer.csproj
+		SccProjectName0 = Quintity.TestFramework.TestEngineer
+		SccLocalPath0 = Quintity.TestFramework.TestEngineer
+		SccProjectUniqueName1 = Quintity.TestFramework.TestEngineer.Setup\\Quintity.TestFramework.TestEngineer.Setup.csproj
+		SccProjectName1 = Quintity.TestFramework.TestEngineer.Setup
+		SccLocalPath1 = Quintity.TestFramework.TestEngineer.Setup
+		SccProjectUniqueName2 = Quintity.TestFramework.TestProject\\Quintity.TestFramework.TestProject.csproj
+		SccProjectName2 = Quintity.TestFramework.TestProject
+		SccLocalPath2 = Quintity.TestFramework.TestProject
+		SccProjectUniqueName3 = Quintity.TestFramework.Runtime\\Quintity.TestFramework.Runtime.csproj
+		SccProjectName3 = Quintity.TestFramework.Runtime
+		SccLocalPath3 = Quintity.TestFramework.Runtime
+		SccLocalPath4 = .
+	EndGlobalSection
+EndGlobal

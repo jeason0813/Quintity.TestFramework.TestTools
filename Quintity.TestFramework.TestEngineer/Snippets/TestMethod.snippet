@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippet Format="1.0.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <Header>
+    <Title>title</Title>
+    <Author>author</Author>
+    <Shortcut>shortcut</Shortcut>
+    <Description>description</Description>
+    <SnippetTypes>
+      <SnippetType>SurroundsWith</SnippetType>
+      <SnippetType>Expansion</SnippetType>
+    </SnippetTypes>
+  </Header>
+  <Snippet>
+    <Declarations>
+      <Literal>
+        <ID>name</ID>
+        <Default>value</Default>
+      </Literal>
+    </Declarations>
+    <Code Language="csharp">
+      <![CDATA[
+    /// <summary>
+    /// Testclass summary information.
+    /// </summary>
+    [TestClass("$functionalarea$", "$funcarea$")]
+    public class ScratchClass : TestClass
+    {
+        [TestMethod]
+        public TestResult $methodname$(
+            [TestParameter("$stringdesc$", "$stringdefault$")]
+            string stringParam,
+            [TestParameter("$paramdesc$", $defaultint$)]
+            int intParam,
+            [TestParameter("$paramdesc$", $defaultbool$)]
+            bool boolParam,
+            [TestParameter("$paramdesc$", $defaultlong$)]
+            long longParam)
+
+        {
+            try
+            {
+                // Do any necessary setting up.
+                this.Setup();
+
+                // Insert test code.
+
+                this.TestResult = TestResult.Pass;
+                this.TestMessage = stringParam;
+            }
+            catch (Exception e)
+            {
+                // Non-test error is thrown.
+                this.TestMessage = e.Message;
+                this.TestResult = TestResult.Error;
+            }
+            finally
+            {
+                // Do any necessary cleanup.
+                this.Teardown();
+            }
+
+            return this.TestResult;
+        }]]>
+    </Code>
+
+  </Snippet>
+</CodeSnippet>
